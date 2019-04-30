@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.css" >
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class='container'>
+    <div class='app-header'>
+        <p class='app-title'>WhatsApp</p>
+        <i class="fa fa-search"> </i>
+        <i class="fas fa-ellipsis-v"></i>
+        <div class='btn-grid'>
+            <button class='btn-camera'><i class="fas fa-camera btn-camera"></i></button>
+            <button class='btn-chats btn active' onclick="openTab(event, 'chats-content')">Chats</button>
+            <button class='btn-status btn' onclick="openTab(event, 'status-content')">Status</button>
+            <button class='btn-calls btn' onclick="openTab(event, 'calls-content')">Calls</button>
+        </div>
+    </div>
+    <div class='app-body'>
+        <div class='tab-cont' id="chats-content">
+            <div class='media'>
+                        <img class='media-img' src='https://pbs.twimg.com/profile_images/988775660163252226/XpgonN0X_400x400.jpg' />
+                            <div class="media-body">
+                                <p class='media-title'>Bill Gates</p>
+                                <p class='msg'>This is Bill Gates</p>
+                                
+                            </div>
+                            <p class='time'>Yesterday</p>
+                            
+                      </div>
+                      <hr align="center" width='90%'>
+                    <div class='media'>
+                        <img class='media-img' src='https://res.cloudinary.com/startup-grind/image/upload/c_fill,f_auto,g_center,h_150,q_auto:good,w_150/v1/softlayer0/80135C1/media/v1/AUTH_d0619b05-07fc-49f0-8249-da585ea45ce5/events/YevaHyusyanBW_dABSIqm.png' />
+                            <div class="media-body">
+                                <p class='media-title'>Yeva</p>
+                                <p class='msg'><i class="fas fa-check-double"></i> Please reply..</p>
+                            
+                            </div>
+                            <p class='time'>Yesterday</p>
+                      </div>
+                      <hr align="center" width='90%'>
+                      <div class='media'>
+                        <img class='media-img' src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Mark_Zuckerberg_cropped.jpg/220px-Mark_Zuckerberg_cropped.jpg' />
+                            <div class="media-body">
+                                <p class='media-title'>Mark Zuckerburg</p>
+                                <p class='msg'>Well done Wasif!</p>
+                                
+                            </div>
+                            <p class='time'>Yesterday</p>
+                      </div>
+                      <hr align="center" width='90%'>
+        </div>
+        <div class='tab-cont' id="status-content">
+          Coming Soon
+        </div> 
+        <div class='tab-cont' id="calls-content">
+            Coming Soon
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+    </body>
+</html>

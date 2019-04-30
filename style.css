@@ -1,0 +1,120 @@
+:root{
+    --default: #075e54; 
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.app-header{
+    background: var(--default);
+    padding: 1px 6px 0px 6px;
+    box-shadow: 0 0 3px gray;
+}
+.app-title{
+    color: white;
+    font-size: 1.1em;
+}
+.fa-search{
+    font-size: 1.1em;
+   position: absolute;
+   right: 42px;
+   top: 20px;
+    color: white;
+   
+}
+.fa-check-double{
+    color: skyblue;
+}
+.fa-ellipsis-v{
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    color: white;
+    top: 20px;
+}
+.btn-grid{
+   margin-top: -8px;
+   display: grid;
+   grid-template-columns: 35px repeat(3, 1fr);
+}
+.btn-chats, .btn-status, .btn-calls, .btn-camera{
+    background: var(--default);
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    outline: none;
+}
+.btn-camera{
+    padding: 6px 0px 7px 0px;
+}
+.fa-camera{
+    font-size: 1.5em;
+}
+.btn-chats:active, .btn-status:active, .btn-calls:active, .btn-camera:active{
+    background: rgb(255, 255, 255, .3);
+}
+.active{
+    border-bottom: solid 2px white;
+}
+.app-body{
+    background: white;
+}
+#chats-content, #calls-content, #status-content{
+  padding: -18px 0px;
+  display: none; 
+  text-align: center;
+}
+.media:nth-child(1){
+    margin-top: 0px;
+}
+.media{
+    padding:  4px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -70px;
+}
+.media-img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+.media-body{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6px;
+    align-items: flex-start;
+}
+.media-title{
+    font-size: 1.3em;
+    position: relative;
+    /*left: -10px;*/
+    top: -14px;
+    
+}
+.msg{
+    position: relative;
+    top: -45px; left: 3px;
+    font-size: 1em;
+    color: gray;
+}
+.time{
+    margin-left: auto;
+    padding-right: 20px;
+    color: gray;
+    opacity: .8;
+    font-size: .85em;
+}
+hr{
+    position: relative;
+    bottom: 65px;
+    left: 9px;
+    opacity: .3;
+}
+#chats-content{
+    display: block;
+}
